@@ -96,3 +96,15 @@ FIN
 > Resultado: La variable clasificación toma el valor de "ALTO"
 
 
+## reflexion final
+-¿Por qué no es suficiente probar únicamente un valor normal?
+> Por que si solo se prueba un caso que si funciona no sabes si el algoritmo falla
+- Qué diferencia existe entre una condición y una acción?
+> La condición es la pregunta que evalua el sistema y la acción es lo que hace el sistema 
+- Qué sucede si las condiciones están en un orden incorrecto?
+>  Se produce un error de lógica 
+- Qué ventaja tiene representar primero la decisión mediante un diagrama?
+> Visualizar el flujo lógico antes de programar
+- Qué cambió en DataLab respecto a la Semana 1?
+> Se realizo el arcivo de la bitacora de la semana 2 
+
