@@ -1,0 +1,174 @@
+from validaciones import validar_nombre
+
+for i in range(5):
+    nombre = input(f"Ingrese el nombre {i + 1}: ")
+
+    if validar_nombre(nombre):
+        print("Nombre válido")
+    else:
+        print("Nombre inválido")
+
+
+
+from validaciones import validar_correo
+
+for i in range(5):
+    correo = input(f"Ingrese el correo {i + 1}: ")
+
+    if validar_correo(correo):
+        print("Correo válido")
+    else:
+        print("Correo inválido")
+
+
+        from validaciones import validar_rango
+
+for i in range(5):
+    valor = float(input(f"Ingrese el valor {i + 1}: "))
+
+    if validar_rango(valor, 0, 100):
+        print("Valor válido")
+    else:
+        print("Valor fuera del rango")
+
+
+
+
+
+
+
+for i in range(5):
+    opcion = int(input("Seleccione una opción (1, 2 o 3): "))
+
+    if validar_opcion(opcion):
+        print("Opción válida")
+    else:
+        print("Opción inválida")
+
+
+
+
+
+        for i in range(10):
+    correo = input(f"Ingrese el correo {i + 1}: ")
+
+    if validar_correo(correo):
+        validos += 1
+    else:
+        invalidos += 1
+
+print("Correos válidos:", validos)
+print("Correos inválidos:", invalidos)
+
+
+
+for i in range(10):
+    valor = float(input(f"Ingrese el valor {i + 1}: "))
+
+    categoria = clasificar_valor(valor)
+
+    print("Categoría:", categoria)
+
+    if categoria == "BAJO":
+        bajo += 1
+    elif categoria == "NORMAL":
+        normal += 1
+    else:
+        alto += 1
+
+print("BAJO:", bajo)
+print("NORMAL:", normal)
+print("ALTO:", alto)
+
+
+
+
+
+for i in range(total):
+    nombre = input(f"Ingrese el nombre {i + 1}: ")
+
+    if validar_nombre(nombre):
+        validos += 1
+    else:
+        invalidos += 1
+
+porcentaje = (validos / total) * 100
+
+print("Válidos:", validos)
+print("Inválidos:", invalidos)
+print("Porcentaje de calidad:", porcentaje, "%")
+
+
+
+
+
+for i in range(10):
+    edad = int(input(f"Ingrese la edad {i + 1}: "))
+
+    if validar_rango(edad, 0, 120):
+        validas += 1
+    else:
+        invalidas += 1
+
+print("Edades válidas:", validas)
+print("Edades inválidas:", invalidas)
+
+
+
+
+
+
+
+for i in range(5):
+
+    print(f"Registro {i + 1}")
+
+    nombre = input("Nombre: ")
+    correo = input("Correo: ")
+    edad = int(input("Edad: "))
+
+    nombre_valido = validar_nombre(nombre)
+    correo_valido = validar_correo(correo)
+    edad_valida = validar_rango(edad, 0, 120)
+
+    if nombre_valido and correo_valido and edad_valida:
+        print("Registro válido")
+    else:
+        print("Registro inválido")
+
+
+
+
+
+
+
+        for i in range(total):
+
+    print(f"\nRegistro {i + 1}")
+
+    nombre = input("Nombre: ")
+    correo = input("Correo: ")
+    edad = int(input("Edad: "))
+    valor = float(input("Valor: "))
+
+    nombre_valido = validar_nombre(nombre)
+    correo_valido = validar_correo(correo)
+    edad_valida = validar_rango(edad, 0, 120)
+    valor_valido = validar_rango(valor, 0, 100)
+
+    if nombre_valido and correo_valido and edad_valida and valor_valido:
+        validos += 1
+        print("Registro válido")
+    else:
+        invalidos += 1
+        print("Registro inválido")
+
+print("\nResumen")
+print("Total:", total)
+print("Válidos:", validos)
+print("Inválidos:", invalidos)
+
+
+
+
+
