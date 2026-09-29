@@ -172,3 +172,56 @@ print("Inválidos:", invalidos)
 
 
 
+from validaciones import validar_nombre, validar_correo, validar_rango
+
+
+cantidad = int(input("¿Cuántos registros desea procesar? "))
+
+validos = 0
+invalidos = 0
+
+for i in range(cantidad):
+
+    print(f"\nRegistro {i + 1}")
+
+    nombre = input("Nombre: ")
+    correo = input("Correo: ")
+    edad = int(input("Edad: "))
+    valor = float(input("Valor: "))
+
+    nombre_valido = validar_nombre(nombre)
+    correo_valido = validar_correo(correo)
+    edad_valida = validar_rango(edad, 0, 120)
+    valor_valido = validar_rango(valor, 0, 100)
+
+    if nombre_valido and correo_valido and edad_valida and valor_valido:
+        validos += 1
+        print("Registro válido")
+    else:
+        invalidos += 1
+        print("Registro inválido")
+
+
+calidad = (validos / cantidad) * 100
+
+print("\n===== RESUMEN =====")
+print("Total:", cantidad)
+print("Válidos:", validos)
+print("Inválidos:", invalidos)
+print("Calidad:", calidad, "%")
+
+
+
+
+for i in range(10):
+
+    if "@" in correo:
+        ...
+
+    if "." in correo:
+        ...
+
+
+
+
+        
